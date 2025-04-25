@@ -291,10 +291,10 @@
         .indicator {
             display: none;
             position: fixed;
-            top: 130px;
-            right: 40px;
+            top: 30px;
+            right: 30px;
             font-size: 40px;
-            animation: pulse 2.5s infinite;
+            animation: pulse 3s infinite;
         }
 
         @keyframes pulse {
@@ -361,7 +361,7 @@
                 order: 2;
             }
 
-          
+
         }
 
         @media only screen and (max-width: 768px) {
@@ -402,9 +402,11 @@
                 /* Adjust padding to ensure no overflow */
                 font-size: 0.85rem;
             }
+
             .indicator {
-        display: block; /* Sadece mobilde göster */
-    }
+                display: block;
+                /* Sadece mobilde göster */
+            }
 
             @media (max-width: 576px) {
                 .carousel-item {
