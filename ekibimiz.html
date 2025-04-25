@@ -197,15 +197,28 @@
             border-color: #4b7727;
         }
 
-        body.page-transition {
-    animation: slideIn 0.5s ease-in-out;
-}
+        .indicator {
+            display: none;
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            font-size: 40px;
+            animation: pulse 2.5s infinite;
+        }
 
-@keyframes slideIn {
-    from { transform: translateY(-100%); }
-    to { transform: translateY(0); }
-}
+        @keyframes pulse {
+            0% {
+                opacity: 0.5;
+            }
 
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
 
 
 
@@ -356,7 +369,7 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media only screen and  (max-width: 768px) {
             .carousel-item {
                 min-height: 450px;
             }
@@ -391,7 +404,9 @@
             .top-ribbon {
                 width: 100%;
             }
-
+            .indicator {
+        display: block; /* Sadece mobilde göster */
+    }
             @media (max-width: 576px) {
                 .carousel-item {
                     min-height: 550px;
