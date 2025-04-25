@@ -197,6 +197,16 @@
             border-color: #4b7727;
         }
 
+        body.page-transition {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+
 
 
 
@@ -455,6 +465,9 @@
                     <a href="https://www.instagram.com/kochukukburosu01/" class="text-dark me-3" target="_blank"><i
                             class="bi bi-instagram"></i></a>
                     <a href="mailto:canhukuk@gmail.com" class="text-dark"><i class="bi bi-envelope"></i></a>
+                </div>
+                <div class="indicator">
+                    <span style="color: #269b1c;"><i class="bi bi-arrow-down-square-fill"></i></span>
                 </div>
             </div>
         </nav>

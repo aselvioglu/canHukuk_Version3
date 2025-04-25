@@ -299,6 +299,28 @@
             height: auto;
             margin: 0 auto;
         }
+        .indicator {
+            display: none;
+            position: fixed;
+            top: 70px;
+            right: 20px;
+            font-size: 40px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0.5;
+            }
+        }
 
         @media (min-width: 768px) {
             .carousel-75 {
@@ -349,7 +371,7 @@
             }
         }
 
-        @media (max-width: 768px) {
+        @media only screen and (max-width: 768px) {
             .carousel-item {
                 min-height: 450px;
             }
@@ -386,6 +408,9 @@
                 padding: 6px 15px; /* Adjust padding to ensure no overflow */
                 font-size: 0.85rem;
             }
+            .indicator {
+        display: block; /* Sadece mobilde göster */
+    }
 
             @media (max-width: 576px) {
                 .carousel-item {
@@ -461,6 +486,9 @@
                     <a href="https://www.instagram.com/kochukukburosu01/" class="text-dark me-3" target="_blank"><i
                             class="bi bi-instagram"></i></a>
                     <a href="mailto:canhukuk@gmail.com" class="text-dark"><i class="bi bi-envelope"></i></a>
+                </div>
+                <div class="indicator">
+                    <span style="color: #269b1c;"><i class="bi bi-arrow-down-square-fill"></i></span>
                 </div>
             </div>
         </nav>
